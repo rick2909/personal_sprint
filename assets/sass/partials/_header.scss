@@ -1,2 +1,23 @@
 .header {
+    width: 87%;
+    height: 500px;
+    background-color: $darkgrey;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    .logo{
+        margin:0px 0px 300px 100px;
+    }
+}
+.head{
+    margin-left: -200px;
+    width: 100%;
+    color: $white;
+    h1{
+        margin: 0px;
+    }
+    p{
+        color: $lightgrey;
+        margin: 0px;
+    }
 }

@@ -3,8 +3,9 @@ input[type="submit"] {
   border: 0;
   box-shadow: none;
   outline: none;
-  background: $white;
+  color: $white;
+  background: $darkgrey;
   cursor: pointer;
-  padding: 0;
+  padding: 10px 20px 10px 20px;
   margin: 0;
 }

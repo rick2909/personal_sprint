@@ -1,12 +1,15 @@
 // Vendor
 @import 'vendor/_normalize.scss';
 
+//vars
+@import 'modules/_vars.scss';
+
 // Mixins
 @import 'mixins/_position.scss';
 @import 'mixins/_transition.scss';
+@import 'mixins/_inputfields';
 
 // Modules
-@import 'modules/_vars.scss';
 @import 'modules/_defaults.scss';
 @import 'modules/_grid.scss';
 @import 'modules/_buttons.scss';

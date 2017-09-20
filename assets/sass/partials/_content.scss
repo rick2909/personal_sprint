@@ -1,3 +1,21 @@
 .content {
-  padding: 2rem;
+	text-align: justify;
+	padding: 2rem;
+}
+.introduction{
+	h2{
+		text-align: center;
+	}
+}
+.introduction__parts{
+	margin: 50px;
+	display: flex;
+	justify-content: space-between;
+	div{
+		width: 47%;
+	}
+}
+.introduction__picture{
+	background-color: $grey;
+	height: 300px;
 }
