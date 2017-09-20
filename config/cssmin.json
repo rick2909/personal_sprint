@@ -1,0 +1,16 @@
+{
+  "target": {
+    "files": [
+      {
+        "expand": true,
+        "cwd": "assets/css",
+        "src": [
+          "*.css",
+          "!*.min.css"
+        ],
+        "dest": "build/css",
+        "ext": ".min.css"
+      }
+    ]
+  }
+}

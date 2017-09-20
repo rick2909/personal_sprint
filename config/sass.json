@@ -1,0 +1,7 @@
+{
+  "dist": {
+    "files": {
+      "assets/css/main.css": "assets/sass/style.scss"
+    }
+  }
+}
