@@ -1,4 +1,26 @@
 .container {
-  width: 100%;
-  height: auto;
+	width: 100%;
+	height: auto;
+}
+
+.content {
+	text-align: justify;
+	padding: 2rem;
+}
+.introduction{
+	h2{
+		text-align: center;
+	}
+	&__parts{
+		margin: 50px;
+		display: flex;
+		justify-content: space-between;
+		div{
+			width: 47%;
+		}
+	}
+	&__picture{
+		background-color: $grey;
+		height: 300px;
+	}
 }

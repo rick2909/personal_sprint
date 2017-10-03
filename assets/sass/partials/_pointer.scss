@@ -1,0 +1,17 @@
+.pointer{
+	display: flex;
+	&__balk{
+		height: 15px;
+		background-color: $black;
+		z-index: 2;
+	}
+	&__bal{
+		display: flex;
+		align-items: flex-end;
+		margin-right: -10px;
+		width: 20px;
+		height: 20px;
+		border: 2px solid $black;
+		border-radius: 90px;
+	}
+}

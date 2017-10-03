@@ -1,10 +1,18 @@
 .footer {
 	position: absolute;
 	right: 0;
-	bottom: -100px;
+	bottom: -150px;
 	left: 0;
-	padding: 1rem 2rem;
-	background-color: $grey;
+	padding: 2rem 4rem;
+	background-color: $darkgrey;
+	font-weight: bold;
+	color: $lightgrey;
 	display: flex;
 	justify-content: space-between;
+	
+	&__social{
+		width: 150px;
+		display: flex;
+		justify-content: space-between;
+	}
 }

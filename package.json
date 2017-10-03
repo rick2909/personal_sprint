@@ -1,10 +1,9 @@
 {
-  "name": "persinal_sprint",
+  "name": "persinal_sprint_gulp",
   "version": "1.0.0",
-  "description": "",
+  "description": "this is a read me for my personal sprints.",
   "main": "Gruntfile.js",
-  "dependencies": {},
-  "devDependencies": {
+  "dependencies": {
     "grunt": "^1.0.1",
     "grunt-contrib-cssmin": "^2.2.1",
     "grunt-contrib-sass": "^1.0.0",
@@ -13,9 +12,22 @@
     "load-grunt-config": "^0.19.2",
     "load-grunt-configs": "^1.0.0"
   },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-watch": "^4.3.11"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rick2909/personal_sprint.git"
+  },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rick2909/personal_sprint/issues"
+  },
+  "homepage": "https://github.com/rick2909/personal_sprint#readme"
 }
