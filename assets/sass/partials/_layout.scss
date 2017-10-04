@@ -19,8 +19,28 @@
 			width: 47%;
 		}
 	}
+	&__text--right{
+		h3{
+			text-align: right;
+		}
+	}
 	&__picture{
 		background-color: $grey;
 		height: 300px;
+	}
+}
+.pointer{
+	@include pointerposition();
+	&--left{
+		@include pointerposition(left);
+	}
+	&__balk{
+		@include pointerlook(10px ,300px, $black);
+	}
+	&__bal{
+		@include pointerbal(20px, $black);
+		&--left{
+			@include pointerbal(20px, $black, left);
+		}
 	}
 }
