@@ -1,0 +1,36 @@
+[
+	{
+		"name": "Rick van Nieuwland",
+		"age": 19,
+		"gender": "male",
+		"email": "rvannieuwland@competa.com",
+		"phone": "+31 06 40040598",
+		"address": "2651BN, Rodenrijseweg 55a, Berkel en Rodenrijs, The Netherlands",
+		"Hobbies": [
+			{
+				"name": "Skiing",
+				"since": 2006,
+				"often": "try to do it once in twice a month",
+				"reason": "Was on school care where you could get skiing lessons for a low price back then. Now i Still do it most of the time in SnowWorld."
+			},
+			{
+				"name": "Coding",
+				"since": 2015,
+				"often": "almost every day now before this studie and internship twice or once a week",
+				"reason": "My friend did this coding education. This is the reason I learned to code and start the same education"
+			},
+			{
+				"name": "Gaming",
+				"since": 2006,
+				"often": "almost every day",
+				"reason": "After I had moved to my new house I got A old pc on my room. A friend of my had Rollercoaster tycoon 2 but he didn't play it so got it from him. Because of this game I started to play more on the pc later game more and more games and better compter and then a real gaming pc"
+			},
+			{
+				"name": "Flying",
+				"since": 2010,
+				"often": "try to do it once in the 2 months",
+				"reason": "falls in with gaming. When i got my laptop (pc after first pc) I saw Flight Simulator X and since then i have flown alot in that sim and later also in the newer sims like XPlane 11 an Flight Sim World. eventually I flew a Full motion 737-800 Simulator."
+			}
+		]
+	}
+]
