@@ -20,19 +20,6 @@
 	<input type="button" onclick="biggestNumber()" value="Show biggest number">
 </form>
 <div id="answer"></div>
-<script>
-	function biggestNumber(){
-		//get numbers out inputfields
-		var value1 = document.getElementById("value-1").value;
-		var value2 = document.getElementById("value-2").value;
-		var value3 = document.getElementById("value-3").value;
-		var value4 = document.getElementById("value-4").value;
-		var value5 = document.getElementById("value-5").value;
-
-		var answer = Math.max(value1, value2, value3, value4, value5);
-		
-		document.getElementById("answer").innerHTML = "the biggest number = " + answer;
-	}
-</script>
+<script src="assets/js/biggestnumber.js"></script>
 </body>
 </html>
