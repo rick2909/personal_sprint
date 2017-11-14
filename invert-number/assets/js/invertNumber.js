@@ -10,7 +10,7 @@ function invertNumber()
 	var reversed = invert.reverse();
 	//joins the reversed array to one string again
 	var joined = reversed.join("");
-	//mkkaes it a number again
+	//makes it a number again
 	var number = Number(joined);
 	//write it
 	document.getElementById("answer").innerHTML = number;

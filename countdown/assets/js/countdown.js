@@ -27,7 +27,7 @@ function start(){
 	minspan.innerHTML = minutes;
 
 	clearInterval(interval);
-	//do soconds funtion after each 1000ms
+	//do seconds funtion after each 1000ms
 	interval = setInterval(second, 1000);
 }
 //remove seconds
