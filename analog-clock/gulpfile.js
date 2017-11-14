@@ -5,5 +5,5 @@ requireDir('./gulp-tasks');
 
 //default task
 gulp.task('default',function() {
-	gulp.watch('/assets/sass/**/*.scss',['styles']);
+	gulp.watch('assets/sass/**/*.scss',['sass']);
 });

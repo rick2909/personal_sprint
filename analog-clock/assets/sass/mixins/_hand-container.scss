@@ -1,0 +1,7 @@
+@mixin hand-container {
+	width: 0;
+	height: 0;
+	position: absolute;
+	display: flex;
+	justify-content: center;
+}
