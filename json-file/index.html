@@ -8,8 +8,35 @@
 <div id="answer"></div>
 <script type="text/javascript" src="assets/js/ajaxrequest.js"></script>
 <script>
-var mydata = AJAX_JSON_Req( 'assets/json/my.json' );
-console.log(mydata);
+const ANSWER_DIV = document.getElementById('answer')
+const JSON_TEXT = ajaxRequest('assets/json/my.json');
+const TEXT = JSON.parse(JSON_TEXT);
+
+for(let i = 0; i < TEXT[0].Hobbies.length; i++){
+	console.log( TEXT[0].Hobbies[i]);
+	ANSWER_DIV.innerHTML += '<ul><li class="hobbie">Hobbie: ' + TEXT[0].Hobbies[i].name + '</li><li class="hobbie">Since: ' + TEXT[0].Hobbies[i].since + '</li><li class="hobbie">How often: ' + TEXT[0].Hobbies[i].often + '</li><li class="hobbie">Reason: ' + TEXT[0].Hobbies[i].reason + '</li></ul>';
+}
+
+	setTimeout(colorPicker, 100);
+
+function colorPicker() {
+	const LIST = document.getElementsByClassName('hobbie');
+
+	for(let i = 0; i < LIST.length; i++ ) {
+			LIST[i].style.backgroundColor = randomColor();
+			LIST[i].style.color = randomColor();
+			console.log()
+	}
+}
+
+function randomColor() {
+	var letters = '0123456789ABCDEF';
+	var color = '#';
+	for (var i = 0; i < 6; i++) {
+		color += letters[Math.floor(Math.random() * 16)];
+	}
+	return color;
+}
 </script>
 </body>
 </html>
