@@ -16,9 +16,9 @@ for(let i = 0; i < TEXT[0].Hobbies.length; i++){
 	ANSWER_DIV.innerHTML += '<ul><li class="hobbie">Hobbie: ' + TEXT[0].Hobbies[i].name + '</li><li class="hobbie">Since: ' + TEXT[0].Hobbies[i].since + '</li><li class="hobbie">How often: ' + TEXT[0].Hobbies[i].often + '</li><li class="hobbie">Reason: ' + TEXT[0].Hobbies[i].reason + '</li></ul>';
 }
 
-	setTimeout(colorPicker, 100);
+	setTimeout(painter, 100);
 
-function colorPicker() {
+function painter() {
 	const LIST = document.getElementsByClassName('hobbie');
 
 	for(let i = 0; i < LIST.length; i++ ) {
@@ -28,10 +28,10 @@ function colorPicker() {
 }
 
 function randomColor() {
-	var letters = '0123456789ABCDEF';
-	var color = '#';
-	for (var i = 0; i < 6; i++) {
-		color += letters[Math.floor(Math.random() * 16)];
+	const LETTERS = '0123456789ABCDEF';
+	let color = '#';
+	for (let i = 0; i < 6; i++) {
+		color += LETTERS[Math.floor(Math.random() * 16)];
 	}
 	return color;
 }
