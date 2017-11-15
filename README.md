@@ -15,6 +15,7 @@ this sprint cotains out of those folders
 
 ## Personal sprint 3
 this sprint cotains out of those folders
+And reading in to Module Pattern.
 
 * analog-clock
 * image-scrolling
