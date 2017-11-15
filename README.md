@@ -20,4 +20,3 @@ this sprint cotains out of those folders
 * image-scrolling
 * json-file
 * read-more
-
