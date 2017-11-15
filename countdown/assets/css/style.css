@@ -1,0 +1,17 @@
+body{
+    padding: 0px;
+}
+#background{
+    font-size: 60px;
+    height: 100vh;
+    width: 100vw;
+    transition: background-color .30s ease-in-out;
+        -moz-transition: background-color .30s ease-in-out;
+        -webkit-transition: background-color .30s ease-in-out;
+}
+.done{
+    background-color: #ff0000;
+}
+.almost{
+    background-color: #ff9900;
+}

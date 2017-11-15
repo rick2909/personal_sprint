@@ -1,11 +1,11 @@
-function promptVersion() {
+document.addEventListener("DOMContentLoaded", function(event) { 
 	var text;
 	var answerDiv = document.getElementById("answer");
 	var name = prompt("Please enter your name here:");
-	if (name == null || name == "") {
-		text = "WHY you cancel it?";
-	} else {
-		text = "Hello " + name + "!";
-	}
+	var city = prompt("The country you live in:");
+	var country = prompt("The country you live in:");
+
+	text = "Hello " + name + "<br> lives in: " + city + " in:" + country + "!";
+
 	answerDiv.innerHTML = text;
-}
+});
