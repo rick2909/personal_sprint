@@ -13,7 +13,6 @@ const JSON_TEXT = ajaxRequest('assets/json/my.json');
 const TEXT = JSON.parse(JSON_TEXT);
 
 for(let i = 0; i < TEXT[0].Hobbies.length; i++){
-	console.log( TEXT[0].Hobbies[i]);
 	ANSWER_DIV.innerHTML += '<ul><li class="hobbie">Hobbie: ' + TEXT[0].Hobbies[i].name + '</li><li class="hobbie">Since: ' + TEXT[0].Hobbies[i].since + '</li><li class="hobbie">How often: ' + TEXT[0].Hobbies[i].often + '</li><li class="hobbie">Reason: ' + TEXT[0].Hobbies[i].reason + '</li></ul>';
 }
 
@@ -25,7 +24,6 @@ function colorPicker() {
 	for(let i = 0; i < LIST.length; i++ ) {
 			LIST[i].style.backgroundColor = randomColor();
 			LIST[i].style.color = randomColor();
-			console.log()
 	}
 }
 
