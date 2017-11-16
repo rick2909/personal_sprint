@@ -21,3 +21,6 @@ And reading in to Module Pattern.
 * image-scrolling
 * json-file
 * read-more
+
+## Personal sprint 4
+In this sprint I made Breakout.
