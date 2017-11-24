@@ -8,7 +8,8 @@ gulp.task('serve', ['sass'], function() {
 		server: "./"
 	});
 
-	gulp.watch("assets/sass/*.scss", ['sass']);
-	gulp.watch("app/*.html").on('change', browserSync.reload);
+	gulp.watch("assets/sass/**/*.scss", ['sass']).on('change', browserSync.reload);
+	gulp.watch("assets/js/*.js").on('change', browserSync.reload);
+	gulp.watch("*.html").on('change', browserSync.reload);
 });
 

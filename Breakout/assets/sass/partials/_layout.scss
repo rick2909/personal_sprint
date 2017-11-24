@@ -1,5 +1,18 @@
 .container {
-	width: 600px;
-	height: 600px;
 	margin: auto;
+	background-color: $white;
+	width: 100vw;
+	height: 75vw;
+	max-height: 100vh;
+	max-width: 133.33vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	.canvas {
+		width: 90%;
+		height: 90%;
+		background-color: $black;
+		border: 1px solid $grey;
+	}
 }
