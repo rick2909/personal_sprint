@@ -50,9 +50,7 @@ function init(){
 	document.addEventListener('keypress', pauzeGame);
 	function pauzeGame(event){
 		keycode = event.keyCode;
-		console.log(keycode);
 		if(keycode == 112){
-			console.log('stop');
 			if(!pauze){
 				stop();
 				pauze = true;
@@ -62,7 +60,7 @@ function init(){
 			}
 		}
 	}
-	
+
 	//greate blocks
 	for(let i = 0; i < BLOCKROWS; i++){
 		blocks[i] = [];
@@ -87,7 +85,6 @@ function update() {
 	PLAYER.update();
 	BAL.update();
 	draw();
-	//pauzeGame();
 	collisions();
 	if(score >= MAX_SCORE){
 		endGame(true);
@@ -160,7 +157,6 @@ function collisions(){
 					BAL.changeDirection('Y');
 					block.alive = false;
 					score += 10;
-					console.log(score);
 				}
 			}
 		}
