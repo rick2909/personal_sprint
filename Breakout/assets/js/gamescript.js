@@ -1,4 +1,4 @@
-const CANVAS = document.getElementById('canvas')
+const CANVAS = document.getElementById('canvas');
 const PLAYER = new object(300, 550, 0, 0, 150, 15, 'player', '#00FF00');
 const BAL= new object(300, 500, Math.floor(Math.random() * 3) + 1, Math.floor(Math.random() * 3) + 1, 10, 10, 'bal', '#FF69B4');
 const PLAYERSPEED = 3;
@@ -7,9 +7,9 @@ const BLOCKCOLLUMS = 20;
 const AI = false;
 const MAX_SCORE = 2000;
 const FPS = 60;
+const BLOCKS = [];
+const KEY_OBJECTS = new Array(255);
 
-let blocks = [];
-let keyObjects = new Array(255);
 let score = 0;
 let handle = 0;
 let pauze = false;
@@ -32,22 +32,24 @@ function init(){
 	ctx.clearRect(0, 0, 800, 600);
 
 	//set all keys on false
-	for (let i = 0; i < keyObjects.length; i++){
-		keyObjects[i] = false;
+	for (let i = 0; i < KEY_OBJECTS.length; i++){
+		KEY_OBJECTS[i] = false;
 	}
 
 	//set pressed key on true
 	document.addEventListener('keydown', keyDown, false);
 	function keyDown(event) {
-		keyObjects[event.keyCode] = true;
+		KEY_OBJECTS[event.keyCode] = true;
 	}
 	//set released key on false
 	document.addEventListener('keyup', keyUp, false);
 	function keyUp(event) {
-		keyObjects[event.keyCode] = false;
+		KEY_OBJECTS[event.keyCode] = false;
 	}
-	
+
+	//pauze
 	document.addEventListener('keypress', pauzeGame);
+
 	function pauzeGame(event){
 		keycode = event.keyCode;
 		if(keycode == 112){
@@ -63,10 +65,10 @@ function init(){
 
 	//greate blocks
 	for(let i = 0; i < BLOCKROWS; i++){
-		blocks[i] = [];
+		BLOCKS[i] = [];
 		for(let j = 0; j < BLOCKCOLLUMS; j++){
 			let block = new object (i * 80 + 5, j * 20 + 5, 0, 0, 70, 15, 'block' + i + j, randomColor(), true);
-			blocks[i][j] = block
+			BLOCKS[i][j] = block
 		}
 	}
 }
@@ -98,8 +100,8 @@ function draw() {
 
 	for(let i = 0; i < BLOCKROWS; i++){
 		for(let j = 0; j < BLOCKCOLLUMS; j++){
-			if(blocks[i][j].alive){
-				blocks[i][j].draw();
+			if(BLOCKS[i][j].alive){
+				BLOCKS[i][j].draw();
 			}
 		}
 	}
@@ -110,10 +112,10 @@ function move(){
 	if (AI == true){
 		PLAYER.xPos = BAL.xPos - PLAYER.width / 2;
 	}
-	if(keyObjects[37] == true || keyObjects[65] == true){
+	if(KEY_OBJECTS[37] == true || KEY_OBJECTS[65] == true){
 		PLAYER.xPos += -PLAYERSPEED;
 	}
-	if(keyObjects[39] == true || keyObjects[68] == true){
+	if(KEY_OBJECTS[39] == true || KEY_OBJECTS[68] == true){
 		PLAYER.xPos += PLAYERSPEED;
 	}
 }
@@ -149,7 +151,7 @@ function collisions(){
 	//blocks
 	for(let i = 0; i < BLOCKROWS; i++){
 		for(let j = 0; j < BLOCKCOLLUMS; j++){
-			block = blocks[i][j]
+			block = BLOCKS[i][j]
 			if(block.alive){
 				if( BAL.xPos + BAL.height > block.xPos && BAL.xPos < block.xPos + block.width
 					&& BAL.yPos < block.yPos + block.height && BAL.yPos + BAL.height > block.yPos ) 
